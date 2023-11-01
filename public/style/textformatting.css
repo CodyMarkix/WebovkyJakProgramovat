@@ -1,0 +1,18 @@
+.indent {
+    margin: auto;
+    width: 90%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.code-snippet {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: left;
+}

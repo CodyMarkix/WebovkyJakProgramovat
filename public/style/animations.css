@@ -1,0 +1,7 @@
+.fadeIn-animation {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

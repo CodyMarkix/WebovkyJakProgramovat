@@ -4,24 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/public/style/index.css">
+    <script src="/public/js/index.js"></script>
 
     <title> Jak začít programování </title>
-    <script>
-        console.log(window.location.href);
-    </script>
 </head>
 <body>
-    <div id="flex-container">
-        <div id="title">
-            <h1> Programování webových stránek </h1>
-            <p> Jak na to? </p>
-        </div>
-        
-        <br>
+    <div id="title" class="center">
+        <h1> Programování webových stránek </h1>
+        <p> Jak na to? </p>
+    </div>
+    
+    <br>
 
-        <h2> Stahování softwaru </h2>
+    <div id="tutorial" class="center">
+        <h2 class="fadeIn-animation"> Stahování softwaru </h2>
 
-        <div id="download-editor">
+        <section id="download-editor" class="fadeIn-animation" style="animation-delay: 0.7s">
             <p>
                 Programování se dnes dá dělat i klidně v prohlížeči. Problém je, že často tyto webové editory nemají plný
                 potenciál jako tradiční.
@@ -30,14 +28,15 @@
                 Proto zajděte na <a href="https://code.visualstudio.com/">stránku VSCode</a> a stáhněte
                 si Visual Studio Code.
             </p>
-        </div>
-        <div id="download-img">
-            <img src="/public/image/vscode.png" width="677" height="357">
-        </div>
+        </section>
+
+        <section id="download-img" class="fadeIn-animation" style="animation-delay: 0.9s">
+            <img src="/public/image/vscode.png" width="677" height="357" class="rounded-corners">
+        </section>
 
         <br>
 
-        <div id="set-up-first-project">
+        <section id="set-up-first-project" class="fadeIn-animation" style="animation-delay: 1.1s">
             <h2>
                 Nastavování prvního projektu
             </h2>
@@ -47,10 +46,68 @@
                 Tato složka bude držet naši stránku.
             </p>
 
-            <h3> Otevření projektu </h3>
+            <br>
 
-            <p> Nyní stačí kliknout na adr
-        </div>
+            <!--
+                Vím, používat <table> na polohování je trochu starý trik,
+                ale CSS je bolest (ne, SCSS je moc malý na takovýhle projekt)
+            -->
+            <table>
+                <tr>
+                    <td>
+                        <div class="indent">
+                            <h3> Otevření projektu </h3>
+                            <p>
+                                Nyní stačí kliknout na adresář v prohlížeči souboru a kliknout na "Open in Code"
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="open-in-code-img">
+                            <img src="/public/image/openincode.png" width="392" height="416" class="rounded-corners">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+
+        <section id="explore-vscode" class="fadeIn-animation" style="animation-delay: 1.3s">
+            <h2> Rozhraní VSCode </h2>
+
+            <p> Takhle asi vypadá VSCode, když je otevřený nějaký projekt.</p>
+            <img src="/public/image/uiLayout.png" width="502" height="294" class="rounded-corners">
+            <p> Není vše vyznačeno, ale je vyznačeno to, co je potřeba teď. Čimž je souborová struktura a místo, kde se píše kód. </p>
+        </section>
+
+        <br>
+
+        <section id="write-first-code" class="fadeIn-animation" style="animation-delay: 1.5s">
+            <h2> Pojďme napsat náš první kód! </h2>
+
+            <p>
+                Right-clickneme na souborovou strukturu a vybereme "New File". Tento soubor pojmenujem "index.html".
+                Potom vložte tento kód do souboru
+            </p>
+            
+            <div>
+                <img src="/public/image/helloWorld.png" width="600" height="267" class="rounded-corners">
+            </div>
+
+            <p>
+                Tento kód vytvoří základní dokument s nastavením UTF-8 a nastavení názvu stránky, tímž je "Document" v &lttitle&gt tagu.
+            </p>
+
+            <br>
+
+            <p>
+                Pojďme si představit pár HTML tagů.
+            </p>
+            <ul>
+                <li> &ltp&gt </li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>

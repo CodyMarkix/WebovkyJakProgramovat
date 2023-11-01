@@ -1,18 +1,37 @@
-@font-face {
-    font-family: sans-serif;
-    src: url(https://fonts.google.com/specimen/Roboto);
+/* Font importing */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/* Importing other stylesheets */
+@import "textformatting.css";
+@import "animations.css";
+
+@keyframes fadeInMoving {
+    from { opacity: 0.0; height: 5% }
+    to { opacity: 1.0;; height: 14.5% }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.0; }
+    to { opacity: 1.0; }
 }
 
 html {
     background-color: #cecacb;
 }
 
-h1, h2, h3, p {
-    font-family: sans-serif
+h1, h2, h3, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+.rounded-corners {
+    border-radius: 10px;
 }
 
 #title {
-    margin: auto;
-    width: 50%;
-    text-align: center;
+    opacity: 0;
+    animation-name: fadeInMoving;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
