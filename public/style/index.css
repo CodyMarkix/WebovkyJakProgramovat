@@ -1,0 +1,18 @@
+@font-face {
+    font-family: sans-serif;
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+
+html {
+    background-color: #cecacb;
+}
+
+h1, h2, h3, p {
+    font-family: sans-serif
+}
+
+#title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
