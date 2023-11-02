@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="/public/favicon.png">
     <link rel="stylesheet" href="/public/style/index.css">
     <script src="/public/js/index.js"></script>
 
@@ -50,7 +51,7 @@
 
             <!--
                 Vím, používat <table> na polohování je trochu starý trik,
-                ale CSS je bolest (ne, SCSS je moc malý na takovýhle projekt)
+                ale CSS je bolest (ne, SCSS je moc velký na takovýhle projekt)
             -->
             <table>
                 <tr>
@@ -84,29 +85,97 @@
         <br>
 
         <section id="write-first-code" class="fadeIn-animation" style="animation-delay: 1.5s">
-            <h2> Pojďme napsat náš první kód! </h2>
+            <h2> Pojďme si napsat náš první kód! </h2>
 
             <p>
                 Right-clickneme na souborovou strukturu a vybereme "New File". Tento soubor pojmenujem "index.html".
-                Potom vložte tento kód do souboru
+                Potom vložte tento kód do souboru:
             </p>
             
             <div>
                 <img src="/public/image/helloWorld.png" width="600" height="267" class="rounded-corners">
             </div>
 
+            <p> Trochu si to rozebereme. </p>
+
             <p>
-                Tento kód vytvoří základní dokument s nastavením UTF-8 a nastavení názvu stránky, tímž je "Document" v &lttitle&gt tagu.
+                Nejdřív tento kód definuje &lthtml&gt element, ve kterém je všechen HTML kód.
+                Je rozdělen do dvou dalších elementů. &lthead&gt a &ltbody&gt.
+            </p>
+
+            <p>
+                V &lthead&gt elementu jsou definované metadata, "nastavení stránky" dá se říct, jako UTF-8 charset a nastavení názvu stránky,
+                tímž je "Document" v &lttitle&gt elementu.
             </p>
 
             <br>
+        </section>
+
+        <section id="what-are-html-elements" class="fadeIn-animation" style="animation-delay: 1.7s">
+            <h2> Co to jsou ty HTML elementy? </h2>
 
             <p>
-                Pojďme si představit pár HTML tagů.
+                Vysvětlovat všechny HTML elementy by bylo příliš dlouhé (je na to i <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN!</a> ;D)
+                Přesto si ale vysvětlíme pár základních elementů, který by měl znát kdokoliv, kdo dělá webovky.
             </p>
+
             <ul>
-                <li> &ltp&gt </li>
+                <li> &lth1&gt - element používaný pro nadpisy, jde sekvenčně nahoru (h1, h2, h3) </li>
+                <li> &ltp&gt - element používaný pro obecný text ("paragraf" podle specifikace)</li>
+                <li> &ltimg&gt - obrázek </li>
+                <li> &ltbr&gt - mezera </li>
             </ul>
+        </section>
+
+        <section id="using-tags" class="fadeIn-animation" style="animation-delay: 1.9s">
+            <h2> Používání těchto elementů </h2>
+
+            <p>
+                V našem kódu nyní využijem pár těchto elementů. Řekněme, že chceme vytvořit stránku která nás popisuje.
+                Podívejte se na tento příklad:
+            </p>
+
+            <div>
+                <img src="/public/image/addingElements.png" width="702" height="139" class="rounded-corners">
+            </div>
+
+            <p>
+                Zde jsme přidali nadpis s &lth1&gt, nějaký text s &ltp&gt, a nakonec obrázek s &ltimg&gt. Výsledek vypadá nějak takto
+            </p>
+
+            <img src="/public/image/ourWebsite.png" width="502" height="251" class="rounded-corners">
+        </section>
+
+        <section id="attributes" class="fadeIn-animation" style="animation-delay: 2.1s;">
+            <h2> Uh, oh! Tady něco nefunguje! </h2>
+
+            <p> Vypadá to, že náš obrázek je moc velký, tudíž ho musíme zmenšit.</p>
+
+            <p> Tady příjde další část elementů, attributy! Je jich spoustu, ale pro teď potřebujeme "width" a "height" </p>
+            <img src="/public/image/attributes.png" width="492" height="241" class="rounded-corners">
+
+            <p> A stránka vypadá mnohem líp! </p>
+            <img src="/public/image/ourWebsiteButNice.png" width="428" height="394">
+        </section>
+
+        <section id="congratulations" class="fadeIn-animation" style="animation-delay: 2.3s;">
+            <h2> Gratulujeme! </h2>
+
+            <p> Zrovna jste vytvořili vaši první stránku! </p>
+            <p> Sice toho tolik není, ale je to mnohem víc než většina lidí udělá ;) </p>
+
+            <br>
+
+            <h3> Kam jít dál? </h3>
+
+            <p> Můžete si zkusit pohrávat v editoru se všelijakými tagy. Eventuelně se potom můžete prokopat do CSS a Javascriptu! </p>
+            <p> Pokud někdy potřebujete pomoc, Mozilla udržuje <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a>, velmi užitečnou příručku/referenci pro HTML, CSS, Javascript a další věci okolo webu! </p>
+        </section>
+
+        <br><br><hr>
+        
+        <section id="credits" class="fadeIn-animation" style="animation-delay: 2.5s">
+            <a href="/credits"> Credits.. </a>
         </section>
     </div>
 </body>

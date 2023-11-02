@@ -20,7 +20,7 @@ html {
     background-color: #cecacb;
 }
 
-h1, h2, h3, p, li {
+h1, h2, h3, p, li, a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,4 +34,21 @@ h1, h2, h3, p, li {
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+
+#credits:link {
+    opacity: 0.1;
+    color: #e3d5d8;
+}
+
+#credits:visited {
+    color: #e3d5d8;
+}
+
+#credits:hover {
+    color: #e3d5d8;
+}
+
+#credits:active {
+    color: #e3d5d8;
 }

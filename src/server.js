@@ -8,8 +8,12 @@ app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 });
 
+app.get('/credits', (req, res) => {
+    res.sendFile(`${__dirname}/credits.html`);
+})
+
 app.use('/public', express.static(`${__dirname}/../public`))
 
 app.listen(port, () => {
-    console.log(`App serving at port ${port}`);
+    console.log(`Now serving website at port ${port}!\nLocal: http://127.0.0.1:8080`);
 });
