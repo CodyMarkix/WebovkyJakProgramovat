@@ -12,6 +12,10 @@ app.get('/credits', (req, res) => {
     res.sendFile(`${__dirname}/credits.html`);
 })
 
+app.get('/javascript', (req, res) => {
+    res.sendFile(`${__dirname}/javascript.html`);
+});
+
 app.use('/public', express.static(`${__dirname}/../public`))
 
 app.listen(port, () => {

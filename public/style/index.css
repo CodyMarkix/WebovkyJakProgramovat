@@ -28,6 +28,10 @@ h1, h2, h3, p, li, a {
     border-radius: 10px;
 }
 
+.shadow-5px {
+    box-shadow: 0px 5px 10px #565656;
+}
+
 #title {
     opacity: 0;
     animation-name: fadeInMoving;
@@ -36,19 +40,15 @@ h1, h2, h3, p, li, a {
     animation-fill-mode: forwards;
 }
 
-#credits:link {
+#credits:link a, #credits:visited a {
     opacity: 0.1;
     color: #e3d5d8;
 }
 
-#credits:visited {
-    color: #e3d5d8;
-}
-
-#credits:hover {
-    color: #e3d5d8;
-}
-
-#credits:active {
-    color: #e3d5d8;
+#header a {
+    opacity: 0;
+    padding: 1%;
+    color: #0000ff;
+    text-decoration: none;
+    animation: fadeIn 1s 1s forwards;
 }

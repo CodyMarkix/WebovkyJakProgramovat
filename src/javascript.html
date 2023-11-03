@@ -1,1 +1,140 @@
-<!-- To add later, pokud musím ;) -->
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="/public/favicon.png">
+        <link rel="stylesheet" href="/public/style/index.css">
+        <script src="/public/js/index.js" type="text/javascript"></script>
+
+        <title> Javascript </title>
+    </head>
+    <body>
+        <div id="header">
+            <a href="/"> HTML </a>
+            <a href="/css"> CSS </a>
+            <a href="/javascript"> Javascript </a>
+            <a href="/credits"> Credits </a>
+        </div>
+
+        <div id="title" class="center">
+            <h1> Javascript 101 </h1>
+        </div>
+
+        <div id="tutorial" class="center fadeIn-animation">
+            <section id="what-is-javascript" class="fadeIn-animation" style="animation-delay: 1.2s">
+                <h2> Co je Javascript?</h2>
+
+                <p>
+                    Javascript je programovací jazyk původně vytvořený pro skriptování webových stránek.
+                    Dnes je používán ve spoustu prostředí. Stránky, servery, machine learning, atd.
+                </p>
+                <p>
+                    Zde se můžete naučit základy
+                    Javascriptu pro web.
+                </p>
+            </section>
+
+            <br>
+
+            <section id="creating-files" class="fadeIn-animation" style="animation-delay: 1.4s">
+                <h2> Vytvoříme soubory </h2>
+
+                <p>
+                    Pokud máte pořád kód z článku o HTML, jen stačí, aby se přidala tato tag.
+                </p>
+
+                <img src="/public/image/scripttag.png" width="418" height="168" class="rounded-corners shadow-5px">
+
+                <p>
+                    Potom vytvoříme nový soubor a pojmenujeme ho <code>index.js</code>.
+                </p>
+            </section>
+
+            <section id="writing-javacript" class="fadeIn-animation" style="animation-delay: 1.6s;">
+                <h2> Baby's first Javascript code </h2>
+
+                <p>
+                    Otevřte soubor <code>index.js</code> a napište jednoduchý "Hello world" program.
+                </p>
+
+                <img src="/public/image/javascripthelloworld.png" width="412" height="190" class="rounded-corners shadow-5px">
+
+                <p>
+                    Velmi jasně, používáme <code>console</code> a používáme funkci <code>log()</code> na tisknutí textu.
+                    Ale kde je ten text tisknut?
+                </p>
+            </section>
+
+            <section id="developer-tools" class="fadeIn-animation" style="animation-delay: 1.8s;">
+                <h2> Developer tools </h2>
+
+                <p>
+                    Každý moderní prohlížeč má něco, čemu říkáme vývojářské nástroje, nebo "dev tools".
+                    Každý má trochu jinak vypadající ale mají prakticky stejnou funkčnost. Je možné je otevřít pomocí F12.
+                </p>
+
+                <img src="/public/image/devtools.png" width="422" height="386" class="rounded-corners shadow-5px">
+
+                <p>
+                    Zde přepneme na sekci "Konzole" a uvidíme náš Ahoj světe!
+                </p>
+
+                <img src="/public/image/consoleoutput.png" class="rounded-corners shadow-5px">
+            </section>
+
+            <section id="variables" class="fadeIn-animation" style="animation-delay: 2.0s;">
+                <h2> Proměnné </h2>
+
+                <p> 
+                    Proměnlivé jsou funkce v programování umožňující uložení dat během toho, co je program spuštěný.
+                    Například text, čísla, nebo pravda/lež (v pokročilejších případech třídy, ukazatele, paměťové adresy, atd.)
+                </p>
+
+                <p> Pojďme si nadefinovat pár proměnných </p>
+
+                <img src="/public/image/variables.png" width="520" height="190" class="rounded-corners shadow-5px">
+                <script defer>
+                    const name = "Hugo Dobrovský";
+                    let age = 16;
+                    let isIntoFootball = true;
+
+                    if (age >= 18) { // Pokud je proměnná age vyšší nebo se rovná 18
+                        console.log("You are allowed in"); // Pustíme uživatele do stránky
+                    } else {
+                        console.log("Try again much later."); // Jinak ho odmítneme
+                    }
+                </script>
+
+                <p>
+                    Tyto proměnné jsme využili v <code>console.log()</code> funkci, tímpádem když zkontrolujeme konzoli,
+                    měli bychom je tam vidět.
+                </p>
+
+                <img src="/public/image/variablesOutput.png" class="rounded-corners shadow-5px">
+            </section>
+
+            <section id="conditional-logic" class="fadeIn-animation" style="animation-delay: 2.5s">
+                <h2> Logika s <code>if</code></h2>
+
+                <p>
+                    Řekněme, že chcete přidat trochu funkčnosti do své stránky,
+                    například zkontrolovat jestli je věk uživatele 18 a výš.
+                </p>
+
+                <img src="/public/image/conditionals.png" width="474" height="192" class="rounded-corners shadow-5px">
+
+                <p> Když se podíváme do konzole... </p>
+
+                <img src="/public/image/conditionalsOutput.png" class="rounded-corners shadow-5px">
+            </section>
+
+            <br><br><hr>
+        
+            <section id="credits" class="fadeIn-animation" style="animation-delay: 2.5s">
+                <a href="/credits"> Credits.. </a>
+            </section>
+        </div>
+    </body>
+</html>
