@@ -1,1 +1,209 @@
-<!-- To add later, pokud musím ;) -->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/public/favicon.png">
+    <link rel="stylesheet" href="/public/style/index.css">
+    <script src="/public/js/index.js"></script>
+
+    <title> CSS </title>
+</head>
+<body>
+    <div id="header">
+        <a href="/"> HTML </a>
+        <a href="/css"> CSS </a>
+        <a href="/javascript"> Javascript </a>
+        <a href="/credits"> Credits </a>
+    </div>
+
+    <div id="title" class="center">
+        <h1> CSS 101 </h1>
+    </div>
+    
+    <br>
+
+    <div id="tutorial" class="center">
+        <h2 class="fadeIn-animation"> Vytváření CSS souboru pro stránku </h2>
+
+        <section id="create-css-file" class="fadeIn-animation" style="animation-delay: 0.7s">
+            <p>
+                Vytvořte nový soubor v našem projektu, pojmenujeme ho <code>style.css</code>.
+            </p>
+	        <p>
+		    Potom přidáme tento kus kódu do našeho <code>index.html</code> souboru.
+	        </p>
+
+	        <img src="/public/image/stylelink.png" class="rounded-corners shadow-5px" with="442" height="154">
+        </section>
+
+        <section id="css-fundamentals" class="fadeIn-animation" style="animation-delay: 0.9s">
+            <h2 class="fadeIn-animation"> Pravidla CSS </h2>
+
+            <p>
+                Představíme si nejdřív pravidla CSS. Tyto nám potom umožní porozumět rozložení a psaní našich stylů.
+            </p>
+
+            <h3> CSS kaskaduje </h3>
+
+            <p> Je tím myšleno, že záleží na pořadí pravidel. Například v tomto kódu bude mít <code>background-color</code> větší prioritu než <code>opacity</code></p>
+	
+            <img src="/public/image/csscascades.png" class="rounded-corners shadow-5px" width="442" height="264">
+
+            <br>
+
+            <h3> Specifikace </h3>
+
+            <p> V CSS záleží, co stylujete. Protože některé věci mají větší prioritu, než jiné. List priority je tento: </p>
+
+            <ul class="no-dots">
+                <li> - Inline styl </li>
+                <li> - ID attributy </li>
+                <li> - Třídy </li>
+                <li> - HTML elementy </li>
+            </ul>
+
+            <br>
+
+            <h3> Box model </h3>
+
+            <p> Box model je nejkomplikovanější část CSS, takže se nebojte pokud ho hned nepochopíte.</p>
+
+            <p> Spočívá v tom, že každý HTML element má tento diagram. </p>
+
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.simplilearn.com%2Fice9%2Ffree_resources_article_thumb%2FCSS-Box-Model.png&f=1&nofb=1&ipt=abf484dfb1e514e528e67b61de1ba09aecb1b41ec8336d1d7631ada5f6ee9401&ipo=images" 
+                class="rounded-corners shadow-5px"
+                with="500"
+                height="349"
+            >
+
+            <p> Content reprezentuje samotný HTML element. Padding je malé místo těsně okolo contentu, který je průhledný. Border je hranice, která běží okolo contentu a paddingu. Margin je místo okolo všeho, je taky průhledný.</p>
+        </section>
+
+        <br>
+
+        <section id="first-css-style" class="fadeIn-animation" style="animation-delay: 1.1s">
+            <h2>
+                Teď konečně otevřeme <code>style.css</code> a vytvoříme si první CSS.
+            </h2>
+
+            <p>
+                Prvně pojďme něco obarvit. Na toto využijeme <code>background-color</code> vlastnost.
+                Vytvoříme CSS pravidlo ovlivňující <code>html</code> element a přidáme pravidlo do něj.
+            </p>
+
+            <img src="/public/image/htmlbackgroundcolor.png" class="rounded-corners shadow-5px" with="426" height="238">
+
+            <p> A když se podíváme na naši stránku, uvidíme že pozadí zhnědlo!</p>
+        </section>
+
+        <br>
+
+        <section id="better-font" class="fadeIn-animation" style="animation-delay: 1.3s">
+            <h2> Lepší písmo </h2>
+            
+            <p> Dnes upřímně nikdo rád nevidí na stránce Times New Roman. Proto přidáme do naší stránky lepší font.</p>
+
+            <p> Vezmeme Roboto ze stránky <a href="https://fonts.google.com">fonts.google.com</a> a přidáme tento kód do CSS souboru.</p>
+        </section>
+
+        <br>
+
+        <section id="write-first-code" class="fadeIn-animation" style="animation-delay: 1.5s">
+            <h2> Pojďme si napsat náš první kód! </h2>
+
+            <p>
+                Right-clickneme na souborovou strukturu a vybereme "New File". Tento soubor pojmenujem "index.html".
+                Potom vložte tento kód do souboru:
+            </p>
+            
+            <div>
+                <img src="/public/image/helloWorld.png" width="600" height="267" class="rounded-corners shadow-5px">
+            </div>
+
+            <p> Trochu si to rozebereme. </p>
+
+            <p>
+                Nejdřív tento kód definuje &lthtml&gt element, ve kterém je všechen HTML kód.
+                Je rozdělen do dvou dalších elementů. &lthead&gt a &ltbody&gt.
+            </p>
+
+            <p>
+                V &lthead&gt elementu jsou definované metadata, "nastavení stránky" dá se říct, jako UTF-8 charset a nastavení názvu stránky,
+                tímž je "Document" v &lttitle&gt elementu.
+            </p>
+
+            <br>
+        </section>
+
+        <section id="what-are-html-elements" class="fadeIn-animation" style="animation-delay: 1.7s">
+            <h2> Co to jsou ty HTML elementy? </h2>
+
+            <p>
+                Vysvětlovat všechny HTML elementy by bylo příliš dlouhé (je na to i <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN!</a> ;D)
+                Přesto si ale vysvětlíme pár základních elementů, který by měl znát kdokoliv, kdo dělá webovky.
+            </p>
+
+            <ul>
+                <li> &lth1&gt - element používaný pro nadpisy, jde sekvenčně nahoru (h1, h2, h3) </li>
+                <li> &ltp&gt - element používaný pro obecný text ("paragraf" podle specifikace)</li>
+                <li> &ltimg&gt - obrázek </li>
+                <li> &ltbr&gt - mezera </li>
+            </ul>
+        </section>
+
+        <section id="using-tags" class="fadeIn-animation" style="animation-delay: 1.9s">
+            <h2> Používání těchto elementů </h2>
+
+            <p>
+                V našem kódu nyní využijem pár těchto elementů. Řekněme, že chceme vytvořit stránku která nás popisuje.
+                Podívejte se na tento příklad:
+            </p>
+
+            <div>
+                <img src="/public/image/addingElements.png" width="702" height="139" class="rounded-corners shadow-5px">
+            </div>
+
+            <p>
+                Zde jsme přidali nadpis s &lth1&gt, nějaký text s &ltp&gt, a nakonec obrázek s &ltimg&gt. Výsledek vypadá nějak takto
+            </p>
+
+            <img src="/public/image/ourWebsite.png" width="502" height="251" class="rounded-corners shadow-5px">
+        </section>
+
+        <section id="attributes" class="fadeIn-animation" style="animation-delay: 2.1s;">
+            <h2> Uh, oh! Tady něco nefunguje! </h2>
+
+            <p> Vypadá to, že náš obrázek je moc velký, tudíž ho musíme zmenšit.</p>
+
+            <p> Tady příjde další část elementů, attributy! Je jich spoustu, ale pro teď potřebujeme "width" a "height" </p>
+            <img src="/public/image/attributes.png" width="492" height="241" class="rounded-corners shadow-5px">
+
+            <p> A stránka vypadá mnohem líp! </p>
+            <img src="/public/image/ourWebsiteButNice.png" width="428" height="394">
+        </section>
+
+        <section id="congratulations" class="fadeIn-animation" style="animation-delay: 2.3s;">
+            <h2> Gratulujeme! </h2>
+
+            <p> Zrovna jste vytvořili vaši první stránku! </p>
+            <p> Sice toho tolik není, ale je to mnohem víc než většina lidí udělá ;) </p>
+
+            <br>
+
+            <h3> Kam jít dál? </h3>
+
+            <p> Můžete si zkusit pohrávat v editoru se všelijakými tagy. Eventuelně se potom můžete prokopat do CSS a Javascriptu! </p>
+            <p> Pokud někdy potřebujete pomoc, Mozilla udržuje <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a>, velmi užitečnou příručku/referenci pro HTML, CSS, Javascript a další věci okolo webu! </p>
+        </section>
+
+        <br><br><hr>
+        
+        <section id="credits" class="fadeIn-animation" style="animation-delay: 2.5s">
+            <a href="/credits"> Credits.. </a>
+        </section>
+    </div>
+</body>
+</html>
