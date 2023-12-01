@@ -107,96 +107,49 @@
             <p> Dnes upřímně nikdo rád nevidí na stránce Times New Roman. Proto přidáme do naší stránky lepší font.</p>
 
             <p> Vezmeme Roboto ze stránky <a href="https://fonts.google.com">fonts.google.com</a> a přidáme tento kód do CSS souboru.</p>
+
+            <img src="/public/image/fonts.png" width="600" height="158" class="rounded-corners shadow-5px">
+
+            <p> Teď jenom stačí abychom využili náš font a aplikovali ho na (například) &ltp&gt element</p>
+
+            <img src="/public/image/applyingfont.png" class="rounded-corners shadow-5px" width="480" height="221">
         </section>
 
-        <br>
-
-        <section id="write-first-code" class="fadeIn-animation" style="animation-delay: 1.5s">
-            <h2> Pojďme si napsat náš první kód! </h2>
+        <section id="classes-and-ids" class="fadeIn-animation" style="animation-delay: 1.5s;">
+            <h2> Třídy a IDčka </h2>
 
             <p>
-                Right-clickneme na souborovou strukturu a vybereme "New File". Tento soubor pojmenujem "index.html".
-                Potom vložte tento kód do souboru:
+                Tyto dvě věci se dají shrnout velmi jednoduše. Třídy a IDčka jsou způsoby jak stylovat individuální elementy, nebo skupiny elementů.
+            </p>
+            <p>
+                Rozdíl mezi IDčkem a třídou je, že třídy jsou používané na několika elementech.
+                Například máme třídu pro 5 pixelový stín, který dáme na několik elementů a jeden element s <code>description</code> IDčkem.
             </p>
             
-            <div>
-                <img src="/public/image/helloWorld.png" width="600" height="267" class="rounded-corners shadow-5px">
-            </div>
-
-            <p> Trochu si to rozebereme. </p>
+            <img src="/public/image/classes.png" class="rounded-corners shadow-5px" width="418" height="226">
 
             <p>
-                Nejdřív tento kód definuje &lthtml&gt element, ve kterém je všechen HTML kód.
-                Je rozdělen do dvou dalších elementů. &lthead&gt a &ltbody&gt.
+                V naší stránce využijeme třídy tím, že k našemu popisku Huga dáme ID <code>description</code> a dáme <code>text-shadow</code>
+                vlastnost do CSS kódu.
             </p>
 
-            <p>
-                V &lthead&gt elementu jsou definované metadata, "nastavení stránky" dá se říct, jako UTF-8 charset a nastavení názvu stránky,
-                tímž je "Document" v &lttitle&gt elementu.
-            </p>
-
-            <br>
+            <img src="/public/image/textshadow.png" class="rounded-corners shadow-5px" width="558" height="298">
         </section>
 
-        <section id="what-are-html-elements" class="fadeIn-animation" style="animation-delay: 1.7s">
-            <h2> Co to jsou ty HTML elementy? </h2>
+        <section id="when-all-is-said-and-done" class="fadeIn-animation" style="animation-delay: 1.7s;">
+            <h2> Když je všechno hotovo </h2>
 
-            <p>
-                Vysvětlovat všechny HTML elementy by bylo příliš dlouhé (je na to i <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN!</a> ;D)
-                Přesto si ale vysvětlíme pár základních elementů, který by měl znát kdokoliv, kdo dělá webovky.
-            </p>
+            <p> Všechno uložíme a výsledek je tento! </p>
 
-            <ul>
-                <li> &lth1&gt - element používaný pro nadpisy, jde sekvenčně nahoru (h1, h2, h3) </li>
-                <li> &ltp&gt - element používaný pro obecný text ("paragraf" podle specifikace)</li>
-                <li> &ltimg&gt - obrázek </li>
-                <li> &ltbr&gt - mezera </li>
-            </ul>
+            <img src="/public/image/finishedproduct.png" class="rounded-corners shadow-5px" width="728" height="382">
         </section>
 
-        <section id="using-tags" class="fadeIn-animation" style="animation-delay: 1.9s">
-            <h2> Používání těchto elementů </h2>
+        <section id="where-to-go-next" class="fadeIn-animation" style="animation-delay: 1.9s;">
+            <h2> Ok, není to to nejhezčí </h2>
 
-            <p>
-                V našem kódu nyní využijem pár těchto elementů. Řekněme, že chceme vytvořit stránku která nás popisuje.
-                Podívejte se na tento příklad:
+            <p> Co je ale důležité je, že jsme se naučili základy CSS! Je to velmi velký jazyk se spousty vlastnostmi a funkcemi.
+                Tudíž opět doproučuji <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN dokumentaci na CSS</a>
             </p>
-
-            <div>
-                <img src="/public/image/addingElements.png" width="702" height="139" class="rounded-corners shadow-5px">
-            </div>
-
-            <p>
-                Zde jsme přidali nadpis s &lth1&gt, nějaký text s &ltp&gt, a nakonec obrázek s &ltimg&gt. Výsledek vypadá nějak takto
-            </p>
-
-            <img src="/public/image/ourWebsite.png" width="502" height="251" class="rounded-corners shadow-5px">
-        </section>
-
-        <section id="attributes" class="fadeIn-animation" style="animation-delay: 2.1s;">
-            <h2> Uh, oh! Tady něco nefunguje! </h2>
-
-            <p> Vypadá to, že náš obrázek je moc velký, tudíž ho musíme zmenšit.</p>
-
-            <p> Tady příjde další část elementů, attributy! Je jich spoustu, ale pro teď potřebujeme "width" a "height" </p>
-            <img src="/public/image/attributes.png" width="492" height="241" class="rounded-corners shadow-5px">
-
-            <p> A stránka vypadá mnohem líp! </p>
-            <img src="/public/image/ourWebsiteButNice.png" width="428" height="394">
-        </section>
-
-        <section id="congratulations" class="fadeIn-animation" style="animation-delay: 2.3s;">
-            <h2> Gratulujeme! </h2>
-
-            <p> Zrovna jste vytvořili vaši první stránku! </p>
-            <p> Sice toho tolik není, ale je to mnohem víc než většina lidí udělá ;) </p>
-
-            <br>
-
-            <h3> Kam jít dál? </h3>
-
-            <p> Můžete si zkusit pohrávat v editoru se všelijakými tagy. Eventuelně se potom můžete prokopat do CSS a Javascriptu! </p>
-            <p> Pokud někdy potřebujete pomoc, Mozilla udržuje <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a>, velmi užitečnou příručku/referenci pro HTML, CSS, Javascript a další věci okolo webu! </p>
         </section>
 
         <br><br><hr>
